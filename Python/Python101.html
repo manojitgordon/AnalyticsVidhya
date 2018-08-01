@@ -12392,6 +12392,1038 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># List Tuples and Sets</span>
+
+<span class="c1"># List</span>
+
+<span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;DBMS&quot;</span><span class="p">,</span><span class="s2">&quot;Stats&quot;</span><span class="p">,</span><span class="s2">&quot;Data Science in R&quot;</span><span class="p">,</span><span class="s2">&quot;EDA&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">courses</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;DBMS&#39;, &#39;Stats&#39;, &#39;Data Science in R&#39;, &#39;EDA&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Indexing in python starts with 0</span>
+
+<span class="n">courses</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[6]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;Data Science in R&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># A negetaive sign represents from the end of the list</span>
+<span class="n">courses</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[7]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;EDA&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">courses</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[8]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;DBMS&#39;, &#39;Stats&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># here 0:2 means starting from 0th index  print all elements but not second index.</span>
+<span class="c1"># the below codes prints all the elements starting from index 1 to the end</span>
+<span class="n">courses</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[9]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Stats&#39;, &#39;Data Science in R&#39;, &#39;EDA&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># A list might contain additional list or even numeric data</span>
+<span class="n">my_list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span><span class="s2">&quot;bar&quot;</span><span class="p">,[</span><span class="s2">&quot;rock&quot;</span><span class="p">,</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span><span class="s2">&quot;scissors&quot;</span><span class="p">]]</span>
+<span class="n">my_list</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[10]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 2, 5, &#39;foo&#39;, &#39;bar&#39;, [&#39;rock&#39;, &#39;paper&#39;, &#39;scissors&#39;]]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#subetting the last element of my_list</span>
+<span class="n">my_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[11]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;rock&#39;, &#39;paper&#39;, &#39;scissors&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># it returns the last element which is a list itself</span>
+<span class="c1"># subsetting a list within a list of my_list</span>
+
+<span class="n">my_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[12]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;rock&#39;, &#39;paper&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#adding values to list</span>
+<span class="n">courses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;ML&quot;</span><span class="p">)</span>
+<span class="n">courses</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[13]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;DBMS&#39;, &#39;Stats&#39;, &#39;Data Science in R&#39;, &#39;EDA&#39;, &#39;ML&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># list.insert takes 2 arguments first is the index where you want to add the data , next is the element we want to add</span>
+<span class="n">courses</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;Neural Networks&quot;</span><span class="p">)</span>
+<span class="n">courses</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[14]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Neural Networks&#39;, &#39;DBMS&#39;, &#39;Stats&#39;, &#39;Data Science in R&#39;, &#39;EDA&#39;, &#39;ML&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#lets try adding two lists</span>
+<span class="n">courses_2</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Inferential Statistics&quot;</span><span class="p">,</span><span class="s2">&quot;AI&quot;</span><span class="p">]</span>
+<span class="n">courses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">courses_2</span><span class="p">)</span>
+<span class="n">courses</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[15]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Neural Networks&#39;,
+ &#39;DBMS&#39;,
+ &#39;Stats&#39;,
+ &#39;Data Science in R&#39;,
+ &#39;EDA&#39;,
+ &#39;ML&#39;,
+ [&#39;Inferential Statistics&#39;, &#39;AI&#39;]]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># As we can observe here list.append is just adding the whole list as a list in courses, same for list.insert ; so is we just</span>
+<span class="c1"># want to add the elements of the second list as elements we use list.extend() method </span>
+<span class="c1">#We will use a method called list.pop() to remove the last element of the list to make courses equal to the list of output [34]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">courses</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="n">courses</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[17]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Neural Networks&#39;, &#39;DBMS&#39;, &#39;Stats&#39;, &#39;Data Science in R&#39;, &#39;EDA&#39;, &#39;ML&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">courses</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">courses_2</span><span class="p">)</span>
+<span class="n">courses</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[18]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Neural Networks&#39;,
+ &#39;DBMS&#39;,
+ &#39;Stats&#39;,
+ &#39;Data Science in R&#39;,
+ &#39;EDA&#39;,
+ &#39;ML&#39;,
+ &#39;Inferential Statistics&#39;,
+ &#39;AI&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Great</span>
+<span class="c1">#Now lets try removing elements from a list</span>
+<span class="c1">#we have already seen list.pop() in action which removes the last element of the list----- IN[56]</span>
+
+<span class="n">courses</span>
+<span class="n">courses</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;AI&#39;</span><span class="p">)</span>
+<span class="n">courses</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[19]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Neural Networks&#39;,
+ &#39;DBMS&#39;,
+ &#39;Stats&#39;,
+ &#39;Data Science in R&#39;,
+ &#39;EDA&#39;,
+ &#39;ML&#39;,
+ &#39;Inferential Statistics&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">courses</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;Stats&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">courses</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[21]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Neural Networks&#39;,
+ &#39;DBMS&#39;,
+ &#39;Data Science in R&#39;,
+ &#39;EDA&#39;,
+ &#39;ML&#39;,
+ &#39;Inferential Statistics&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We can see now courses dont have the elements AI and Stats</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Now lets see some examples of sort</span>
+<span class="c1"># now suppose we want to reverse the elements of the List courses</span>
+<span class="n">courses</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="n">courses</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[24]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Inferential Statistics&#39;,
+ &#39;ML&#39;,
+ &#39;EDA&#39;,
+ &#39;Data Science in R&#39;,
+ &#39;DBMS&#39;,
+ &#39;Neural Networks&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># As we can see above the elements of courses has been reversed</span>
+<span class="c1">#now lets use list.sort() method</span>
+<span class="n">courses</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">courses</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[26]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;DBMS&#39;,
+ &#39;Data Science in R&#39;,
+ &#39;EDA&#39;,
+ &#39;Inferential Statistics&#39;,
+ &#39;ML&#39;,
+ &#39;Neural Networks&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We can see the list have been sorted alphabetically.</span>
+<span class="c1"># now suppose we want it (courses) to be sorted alphabetically in descending order we use the following argument in the method </span>
+<span class="n">courses</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">courses</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[28]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Neural Networks&#39;,
+ &#39;ML&#39;,
+ &#39;Inferential Statistics&#39;,
+ &#39;EDA&#39;,
+ &#39;Data Science in R&#39;,
+ &#39;DBMS&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Cool</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># now we will use a function to short the list</span>
+<span class="n">courses_sorted</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="n">courses</span><span class="p">)</span>
+<span class="n">courses_sorted</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[30]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;DBMS&#39;,
+ &#39;Data Science in R&#39;,
+ &#39;EDA&#39;,
+ &#39;Inferential Statistics&#39;,
+ &#39;ML&#39;,
+ &#39;Neural Networks&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># lets print out the index of elements in courses</span>
+<span class="n">courses</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;EDA&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[37]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>3</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#lets now see if an element exists in a list (courses) or not</span>
+<span class="s1">&#39;EDA&#39;</span> <span class="ow">in</span> <span class="n">courses</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[38]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s2">&quot;AI&quot;</span> <span class="ow">in</span> <span class="n">courses</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[39]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Lets see some more functions </span>
+<span class="c1">#lets print out the minimum value from the list </span>
+<span class="n">my_list</span><span class="o">=</span><span class="p">[</span><span class="mi">23</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="mi">32</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">67</span><span class="p">]</span>
+
+<span class="nb">min</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[31]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>12</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># now  lets print maximum</span>
+
+<span class="nb">max</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[32]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>78</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># and now for the sum of the elements in the list</span>
+
+<span class="nb">sum</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[33]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>257</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We can print the elements of a list using a for loop</span>
+<span class="k">for</span> <span class="n">elements</span> <span class="ow">in</span> <span class="n">courses</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">elements</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Neural Networks
+ML
+Inferential Statistics
+EDA
+Data Science in R
+DBMS
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># we can print the index and the elements of list using enumerate</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span><span class="n">items</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">courses</span><span class="p">):</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="n">items</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0 Neural Networks
+1 ML
+2 Inferential Statistics
+3 EDA
+4 Data Science in R
+5 DBMS
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#  print from a particular index </span>
+
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span><span class="n">items</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">courses</span><span class="p">,</span><span class="n">start</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="n">items</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2 Neural Networks
+3 ML
+4 Inferential Statistics
+5 EDA
+6 Data Science in R
+7 DBMS
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
